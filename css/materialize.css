@@ -2877,6 +2877,29 @@ video.responsive-video {
           transform: translateX(-50%);
 }
 
+.img-strip {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.img-strip .parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.img-strip .parallax .img {
+  opacity: 1;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .pin-top, .pin-bottom {
   position: relative;
 }
