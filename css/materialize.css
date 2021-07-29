@@ -3121,7 +3121,7 @@ td, th {
   overflow: hidden;
   position: relative;
   width: 25%;
-  max-height: 600px;
+  max-height: 80vh;
   overflow: scroll;
 }
 
@@ -3178,7 +3178,7 @@ td, th {
 
 .collection .collection-item.active {
   background-color: #8a1616;
-  color: #eafaf9;
+  color: #ffffff;
 }
 
 .collection .collection-item.active .secondary-content {
@@ -3187,8 +3187,8 @@ td, th {
 
 .collection a.collection-item {
   display: block;
-  -webkit-transition: .25s;
-  transition: .25s;
+/*   -webkit-transition: .25s;
+  transition: .25s; */
   color: #8a1616;
 }
 
