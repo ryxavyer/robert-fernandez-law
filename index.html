@@ -277,7 +277,8 @@
         </div>
         <div class="col l4 s12">
           <h5 class="white-text">Our Address</h5>
-          <a href="https://goo.gl/maps/wue3swUsvnb453pF7"><p class="grey-text text-lighten-4">215 W. Stubbs Street Edinburg, Texas 78539</p></a>
+          <a href="https://goo.gl/maps/wue3swUsvnb453pF7" target="_blank" rel="noopener noreferrer"><p class="grey-text text-lighten-4">215 W. Stubbs Street Edinburg, Texas 78539</p></a>
+          <p class="grey-text text-lighten-1" style="font-size: 16px; cursor: pointer;" onclick="openMap()">Need help finding our office?</p>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Call Us</h5>
@@ -359,6 +360,11 @@
         default:
       }
     });
+  </script>
+  <script>
+    function openMap(){ 
+      window.open('./images/map.png','mywin','width=709,height=408');
+    }
   </script>
   </body>
 </html>
