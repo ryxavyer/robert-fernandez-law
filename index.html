@@ -21,7 +21,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script type="text/javascript">
     (function() {
-    emailjs.init("user_BqARcQTUpSVqHeloAUmws");
+      emailjs.init("user_AJWmdNbLp4DBI0RgFTXE0");
     })();
   </script>
 </head>
@@ -57,14 +57,14 @@
     </div>
   </nav>
 
-  <div id="index-banner" class="parallax-container valign-wrapper">
-    <div class="parallax"><img src="images/office1.png" alt="Unsplashed background img 1"></div>
-  </div>
+  <div><img class="office" src="images/office.png" alt="Unsplashed background img 1"></div>
 
+  <a id="practice" style="color: black">
   <div class="container">
-    <div class="section">
+    <div class="section no-pad-bottom">
 
       <div class="row">
+        <br>
         <br>
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
@@ -74,18 +74,13 @@
           <p class="center light" style="font-style: italic;">Nuestros clientes son nuestra prioridad y los resultados que queran son las metas que hacemos lo posible obtener en una manera agresiva, legal y etica. </p>
         </div>
       </div>
-      <br>
     </div>
   </div>
 
-  <div class="parallax-container valign-wrapper">
-    <div class="parallax"><img src="images/office2.png" alt="Unsplashed background img 1"></div>
-  </div>
+  <!-- <div class="parallax"><img src="images/office2.png" alt="Unsplashed background img 1"></div> -->
 
   <div class="container">
-    <a id="practice">
-    <br><br>
-    <div class="section">
+    <div class="section no-pad">
 
       <!--   Icon Section   -->
       <div class="row" style="color: black">
@@ -140,8 +135,8 @@
       </div>
       <br>
     </div>
-    </a>
   </div>
+  </a>
 <!--   <div class="container">
     <div class="section">
 
@@ -157,9 +152,11 @@
     </div>
   </div> -->
 
-  <div class="parallax-container valign-wrapper">
+  <div><img class="justice" src="images/justice1.jpg" alt="Unsplashed background img 1"></div>
+
+ <!--  <div class="parallax-container valign-wrapper">
     <div class="parallax"><img src="images/justice1.jpg" alt="Unsplashed background img 1"></div>
-  </div>
+  </div> -->
 
   <div class="container">
     <br>
@@ -180,9 +177,11 @@
     <br><br>
   </div>
 
-  <div class="parallax-container valign-wrapper">
+  <!-- <div class="parallax-container valign-wrapper">
     <div class="parallax"><img src="images/justice2.jpg" alt="Unsplashed background img 1"></div>
-  </div>
+  </div> -->
+
+  <div><img class="jail" src="images/jail.jpg" alt="Unsplashed background img 1"></div>
 
   <div class="container">
     <br>
@@ -322,13 +321,13 @@
               setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
             }
             else {
-              emailjs.sendForm('contact_service_test', 'contact_test', this)
+              emailjs.sendForm('contact_service', 'contact_template', this)
                   .then(function() {
                       var x = document.getElementById("toast-success");
                       x.className = "show";
                       setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
                       for (let i of document.getElementById('contact-form')) {
-                        i.value = "";
+                        if (i.id != "disclaimer") i.value = "";
                       }
                   }, function(error) {
                       var x = document.getElementById("toast-failure");
