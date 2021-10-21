@@ -3502,6 +3502,22 @@ table span.badge {
   }
 }
 
+@media only screen and (min-width: 301px) and (max-width: 992px) {
+  .heading{
+    font-size: 4rem;
+  }
+  .information {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .information-icon{
+    font-size: 7rem;
+  }
+  .information-icon-text{
+    font-size: 3rem;
+  }
+}
+
 @media only screen and (min-width: 993px) {
   .container {
     width: 70%;
